@@ -1,0 +1,160 @@
+body{
+    background-color:#ece9e7;
+    font-family: "Jost", sans-serif;
+}
+
+header {
+    position: sticky;
+    background-color: #ece9e7;
+    top: 0;
+    left:0;
+    z-index:10;
+}
+
+#cabecalho {
+    position: sticky; /* ou fixed */
+    top: 0;
+    z-index: 1000;
+    background-color: #ece9e7; /* muito importante pra não ficar transparente */
+
+}
+
+.nav {
+    font-size: 20px;
+}
+
+.section-title {
+    font-family: "Jost", sans-serif;
+}
+
+#missao {
+    background-color: #ece9e7;;
+}
+
+
+#services,
+#contabil,
+#jtrabalhista,
+#contato {
+    padding: auto;
+    background-color: #ddd6d0;
+}
+
+#duvida {
+    padding: 10px;
+}
+
+.mvv-section {
+    padding: 10px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.mvv-item {
+    margin-bottom: 40px;
+}
+
+.mvv-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mvv-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.mvv-title {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.mvv-title.missao {
+    color: #f57c00;
+}
+
+.mvv-title.visao {
+    color: #007bff;
+}
+  
+.mvv-title.valores {
+    color: #ff7f50;
+}
+
+.mvv-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 30px 0;
+}
+
+footer {
+    background-color: #f8f8f8; /* ou a cor que preferir */
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+footer .container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#services .card {
+    padding: auto;
+    height: 250px;
+}
+
+/*footer ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 15px;
+}
+
+footer li img {
+    
+    height: 32px;
+    transition: transform 0.2s ease;
+}
+
+footer li img:hover {
+    transform: scale(1.1);
+}*/
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+footer .container {
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    background-color: #fd7e14;
+    border: none;
+
+}
+
+.btn:hover {
+    background-color: #ffc107;
+}
