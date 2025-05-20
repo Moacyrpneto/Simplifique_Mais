@@ -158,3 +158,134 @@ footer .container {
 .btn:hover {
     background-color: #ffc107;
 }
+
+@media screen and (max-width: 768px) {
+    #cabecalho img {
+        height: 60px !important;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-logo {
+        margin-right: 20px;
+    }
+
+    .bi-instagram {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Reduz altura do logo no header */
+    #cabecalho img {
+        height: 80px !important;
+    }
+
+    /* Padding horizontal da container */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Imagem do slide - largura total, altura menor */
+    .img-fluid {
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover;
+    }
+
+    /* Texto centralizado no footer (tablet) */
+    footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Logo do rodapé centralizada */
+    .footer-logo {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .bi-instagram {
+        margin-right: 37px;
+    }
+
+    /* Reduz espaçamento e tamanho da fonte dos serviços */
+    .services h2 {
+        font-size: 32px;
+    }
+
+    .services .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .services p, .services h5 {
+        font-size: 17px;
+    }
+
+    /* Menu de navegação centralizado e com margem entre itens */
+    .nav-link {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    /* Corrige alinhamento dos ícones sociais */
+    .d-flex.justify-content-center.justify-content-md-start {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Aumenta a largura do container para telas largas */
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    /* Logo um pouco maior se a tela permite */
+    #cabecalho img {
+        height: 140px !important;
+    }
+
+    /* Texto maior nos títulos das seções */
+    .services h2 {
+        font-size: 48px;
+    }
+
+    /* Tamanho maior para os parágrafos e títulos internos */
+    .services p,
+    .services h5 {
+        font-size: 20px;
+    }
+
+    /* Espaçamento entre colunas aumenta */
+    .services .col-md-4 {
+        padding: 0 20px;
+    }
+
+    /* Slide banner maior */
+    .img-fluid {
+        height: 400px;
+    }
+
+    /* Footer espaçado e elegante */
+    footer {
+        padding: 60px 0;
+    }
+
+    footer .col-md-4 {
+        text-align: left;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+    }
+
+    /* Ícones sociais espaçados e maiores */
+    .bi {
+        font-size: 1.6rem;
+    }
+}
