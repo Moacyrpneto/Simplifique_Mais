@@ -238,6 +238,14 @@ footer .container {
 }
 
 @media screen and (min-width: 1200px) {
+    .img-fluid {
+        height: auto;
+        max-height: 400px !important; /* ajuste conforme seu layout */
+        object-fit: cover;
+        width: 100%;
+        display: block;
+    }
+
     /* Aumenta a largura do container para telas largas */
     .container {
         max-width: 1140px;
