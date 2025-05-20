@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simplifique Mais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,25 +14,34 @@
     <link rel="icon" type="image/png" href="./images/favicon-2.ico.png">
 </head>
 <body>
-    <header id="cabecalho" style="height: 80px; overflow: hidden;">
-        <div class="navbar navbar-expand-lg  h-100 align-items-center">
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg h-100 align-items-center">
             <div class="container">
                 <div class="logotipo">
-                    <img class="m-0" src="./images/logodois.png" alt="Logo-simplifique"  style="height: 120px; width: auto;">
+                    <img class="m-0" src="./images/logodois.png" alt="Logo-simplifique" style="height: 120px; width: auto;">
                 </div>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+            <!-- Botão hamburguer -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-controls="menu-navegacao" aria-expanded="false" aria-label="Alternar navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+    
+            <!-- Menu -->
+            <nav class="collapse navbar-collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav navbar-nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="./index.html">Início</a>
+                        <a class="nav-link text-dark d-flex align-items-center gap-2" href="./index.html">
+                            <i class="bi bi-house-door-fill"></i> Início
+                        </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="./sobrenos.html">Sobre nós</a>
+                        <a class="nav-link text-dark d-flex align-items-center gap-2" href="./sobrenos.html">
+                            <i class="bi bi-info-circle-fill"></i> Sobre nós
+                        </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="./servicos.html">Serviços</a>
+                        <a class="nav-link text-dark d-flex align-items-center gap-2" href="./servicos.html">
+                            <i class="bi bi-briefcase-fill"></i> Serviços
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -60,18 +70,18 @@
     <section class="mt-5 container" id="duvida">
         <h2 class="text-center mb-5">Por que escolher a Simplifique Mais?</h2>
         <div class="row">
-        <div class="col-md-4">
-            <h6>Soluções Personalizadas</h6>
-            <p>Atendemos às necessidades específicas de cada cliente com flexibilidade.</p>
-        </div>
-        <div class="col-md-4">
-            <h6>Equipe Especializada</h6>
-            <p>Profissionais qualificados com experiência nas áreas de atuação.</p>
-        </div>
-        <div class="col-md-4">
-            <h6>Tecnologia de Ponta</h6>
-            <p>Ferramentas digitais para processos mais ágeis e seguros.</p>
-        </div>
+            <div class="col-md-4">
+                <h6 class="fs-5">Tranquilidade</h6>
+                <p class="fs-5">Durma tranquilo sabendo que sua empresa está protegida.</p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="fs-5">Economia</h6>
+                <p class="fs-5"> Evite gastos inesperados com multas e processos.</p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="fs-5">Tempo livre</h6>
+                <p class="fs-5">Deixe a burocracia conosco e foque no seu negócio.</p>
+            </div>
         </div>
     </section>
 
@@ -80,8 +90,7 @@
             <div class="row text-center text-md-start">
             <!-- Logo ou nome da empresa -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold">Simplifique Mais</h5>
-                    <img src="./images/logo.jpeg" style="height: 100px; margin-left: 25px;" alt="">
+                    <img src="./images/logo.jpeg" class="footer-logo" style="height: 100px; margin-left: 25px;" alt="">
                 </div>
             <!-- Contato -->
                 <div class="col-md-4 mb-4">
@@ -114,3 +123,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
